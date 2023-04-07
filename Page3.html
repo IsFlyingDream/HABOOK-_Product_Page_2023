@@ -8,15 +8,21 @@
   <title>I.F.D&B.D.</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="css_js/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link href="css/bootstrap5.min.css" rel="stylesheet" />
+  <link href="js/bootstrap5.min.js" rel="stylesheet" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 
   <!-- Custom styles for this template -->
-  <link href="css_js/modern-business.css" rel="stylesheet" />
+  <link href="css/modern-business.css" rel="stylesheet" />
 
   <!-- Bootstrap core JavaScript -->
-  <script src="css_js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <!--script src="bootstrap.bundle.min.js"></script-->
-  <script src="css_js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
 
   <!-- Vue -->
@@ -26,7 +32,7 @@
   <!-- Custom styles for this template -->
   <link rel="icon" type="image/png" href="img/favicon.png" />
 
-  <link rel="stylesheet" type="text/css" href="css_js/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
 </head>
 
@@ -34,24 +40,28 @@
   <div id="VueApp">
     <!--上排按鈕-->
     <iframe id="ifrm" class=" iframeTop fixed-top" scrolling="no" src="menu.html" frameborder="0"
-     allowfullscreen></iframe>
+      allowfullscreen></iframe>
 
-    <!--本頁內容-->    
+    <!--本頁內容-->
     <div class="ServiceDIV3 text-center  pt-5 fixed-bottom">
-      <h2 ><strong><u>與我聯絡</u></strong></h2>
-      <p ><small>工作邀約歡迎從以下管道聯絡我</small></p>
-      <div class="row justify-content-center">
-        <div class="col-8 col-md-4 mx-3 my-2 page3_div">
-          <img class="about-img" src="img/email.svg" />
-          <h4><strong>信箱</strong></h4>
-          <p>ruby29922026@gmail.com</p>
+      <h2><strong><u>與我聯絡</u></strong></h2>
+      <p><small>工作邀約歡迎從以下管道聯絡我</small></p>
+      <div class="row justify-content-center gx-2">
+        <div class="col-8 col-md-4 ">
+          <div class="page3_div"> <img class="about-img" src="img/email.svg" />
+            <h4><strong>信箱</strong></h4>
+            <p>ruby29922026@gmail.com</p>
+          </div>
+
         </div>
-        <div class="col-8 col-md-4 mx-3 mb-4 page3_div">
-          <img class="about-img" src="img/phone-call.svg" />
-          <h4><strong>電話</strong></h4>
-          <p>0980-696-737</p>
-        </div>   
-      </div>     
+        <div class="col-8 col-md-4">
+          <div class=" page3_div">
+              <img class="about-img" src="img/phone-call.svg" />
+              <h4><strong>電話</strong></h4>
+              <p>0980-696-737</p>
+          </div>         
+        </div>
+      </div>
     </div>
   </div>
 </body>
