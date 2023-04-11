@@ -29,7 +29,7 @@ function listBtn() {
 		HidAndShow.style.display = "block";
 	}
 }
-function listBtnlistBtn() {
+function IndexlistBtn() {
 	var listBtn = document.getElementById('listBtn');
 	var textlistn = document.getElementById('HidAndShow');
 	if (textlistn.style.display === "block") {
@@ -90,29 +90,26 @@ const vm = new Vue({
 	methods: {
 		listBtn() {//上方菜單顯示與隱藏的按鈕↓↓
 			var listBtn = document.getElementById('listBtn');
-			var textlistn = document.getElementById('HidAndShow');
-			var menu = document.getElementById('menu');
+			var textlistn = document.getElementById('HidAndShow');	
 			if (textlistn.style.display === "block") {
-				HidAndShow.style.display = "none";
-				menu.style['height'] = "80px";
+				HidAndShow.style.display = "none";				
 			} else {
-				HidAndShow.style.display = "block";				
-				menu.style['height'] = "auto";
+				HidAndShow.style.display = "block";
 			}
 		},
-		// IndexlistBtn() {
-		// 	var textlistn = document.getElementById('HidAndShow');
-		// 	if (textlistn.style.display === "block") {
-		// 		HidAndShow.style.display = "none";
-		// 		var mouseFunction = document.getElementById('mouseFunction');
-		// 		//mouseFunction.style['background-color'] = "";
-		// 	} else {
-		// 		HidAndShow.style.display = "block";
-		// 		var mouseFunction = document.getElementById('mouseFunction');
-		// 		//mouseFunction.style['background-color'] = "rgba(0, 0, 0, .6)";
-		// 		//mouseFunction.style['transition'] = "background-color 0.4s";
-		// 	}
-		// },//上方菜單顯示與隱藏的按鈕↑↑
+		IndexlistBtn() {
+			var textlistn = document.getElementById('HidAndShow');
+			if (textlistn.style.display === "block") {
+				HidAndShow.style.display = "none";
+				var mouseFunction = document.getElementById('mouseFunction');
+				mouseFunction.style['background-color'] = "";
+			} else {
+				HidAndShow.style.display = "block";
+				var mouseFunction = document.getElementById('mouseFunction');
+				mouseFunction.style['background-color'] = "rgba(0, 0, 0, .6)";
+				mouseFunction.style['transition'] = "background-color 0.4s";
+			}
+		},//上方菜單顯示與隱藏的按鈕↑↑
 
 		mouseOver() {//滑鼠移入上方菜單↓↓
 			var mouseFunction = document.getElementById('mouseFunction');
