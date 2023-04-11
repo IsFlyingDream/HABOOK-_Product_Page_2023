@@ -140,7 +140,7 @@ const vm = new Vue({
 window.onresize = function () {  //每次視窗改變都會載入下列事件
 	var listBtn = document.getElementById('listBtn');
 	var textlistn = document.getElementById('HidAndShow');
-	if (document.body.scrollWidth >= 870) {
+	if (document.body.scrollWidth >= 610) {
 		listBtn.style.display = "none";
 		HidAndShow.style.display = "block";
 	} else {

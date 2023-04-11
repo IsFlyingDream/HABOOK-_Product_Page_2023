@@ -33,8 +33,7 @@
   <!-- <img class="logo"  src="img/logo_icon.png" alt="../"> -->
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-
+  
 </head>
 
 <body style="background-color:transparent">
@@ -87,45 +86,78 @@
 
     <!--本頁內容-->
     <div class="ServiceDIV  pt-5 pt-md-0">
-        
         <div class=" text-center">
-            <h2><strong><u>您選擇的方案和定價</u></strong></h2>
-        </div>
+            <h2><strong><u>我的訂單紀錄</u></strong></h2>
+        </div>       
       <!-- <p><small>以下僅放部分程式方面的專案</small></p>      -->
       <div class="row justify-content-center">
-        <div class="col-10 col-md-8 col m-4 shadow p-4 " >
+        <div class="col-10  col m-4 shadow p-4 " >
           <!--拿掉@click="imgplay(0)"-->
-          <p><strong>HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web IRS 30 - Person/Year</strong></p>
-          <div class="row p-2">
-              <div class="col-6 d-flex justify-content-start">              
-                  <p class="">小計</p>   
-              </div>               
-              <div class="col-6 d-flex justify-content-end">              
-                  <p>NTD 1,590</p>   
-              </div>
-          </div>
-          <hr>
-          <div class="row p-2">
-              <div class="col-6 d-flex justify-content-start">              
-                  <p><strong>應付金額</strong></p>   
-              </div> 
-              <div class="col-6 d-flex justify-content-end">              
-                  <h3 class="text-danger ">NTD 1,590</h3>   
-              </div>
-          </div>
+          <div class="d-flex align-items-center text-primary">
+              <h5 class="me-3">已付款訂單</h5>
+              <hr class="flex-grow-1 border border-primary border-0 opacity-75">
+            </div>
          
-          <div style="background-color: rgb(230, 230, 230)" class="p-3">
-            <div class="d-flex justify-content-end">
-                <p>訂閱人：李子 (用戶編號 1681089795)</p>
-            </div>  
-            <div class="d-flex justify-content-end ">
-                <input class="form-control  text-end w-75" type="text" placeholder="請輸入您的電子郵件，如name@example.com">
-              </div>            
-          </div>                 
-        </div>
-        <div class="col-10 col-md-8 col d-flex justify-content-end" >
-            <button type="button" class="btn btn-dark" >繼續付款</button>
-        </div>   
+          <!-- HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web IRS 30 - Person/Year -->  
+         
+         <div class="row p-2 px-5"> <!-- 第一筆訂單       -->
+            <div style="background-color: rgb(230, 230, 230)" class="p-3 rounded-3">
+                <div class="float-end">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <p class="ms-2 mb-0">已付款</p>
+                      </div>
+                </div>  
+                <p class="fs-5">訂單編號 XXXXXXXXXXXXXXX</p>
+                <div class="text-secondary">
+                   <p class="m-0">付款時間2020/06/30 15:37:49</p>
+                   <p class="m-0">實付金額NT 4330</p>
+                   <p>付款方式 信用卡 繳費</p>
+                </div>
+                <hr>
+                <p class="my-1">購買項目</p>
+                 
+                <div class="float-end text-secondary">
+                    <div class="d-flex align-items-center">
+                       
+                        <p class="ms-2 mb-0">序號oweiuopwef</p>
+                      </div>
+                </div>
+                <p class="text-secondary ">醍摩豆雲平台IES 5</p>        
+            </div>
+         </div>
+
+         <div class="row p-2 px-5"> <!-- 第二筆訂單       -->
+          <div style="background-color: rgb(230, 230, 230)" class="p-3 rounded-3">
+              <div class="float-end">
+                  <div class="d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                      </svg>
+                      <p class="ms-2 mb-0">已付款</p>
+                    </div>
+              </div>  
+              <p class="fs-5">訂單編號 XXXXXXXXXXXXXXX</p>
+              <div class="text-secondary">
+                 <p class="m-0">付款時間2020/06/30 15:37:49</p>
+                 <p class="m-0">實付金額NT 4330</p>
+                 <p>付款方式 信用卡 繳費</p>
+              </div>
+              <hr>
+              <p class="my-1">購買項目</p>
+               
+              <div class="float-end text-secondary">
+                  <div class="d-flex align-items-center">
+                     
+                      <p class="ms-2 mb-0">序號oweiuopwef</p>
+                    </div>
+              </div>
+              <p class="text-secondary ">醍摩豆雲平台IES 5</p>        
+          </div>
+       </div>
+           
       </div>
         
     </div>
