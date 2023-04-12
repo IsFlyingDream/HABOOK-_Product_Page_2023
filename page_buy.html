@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width; initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <title>醍摩豆產品訂閱服務</title>
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="css/bootstrap5.min.css" rel="stylesheet" />
+  <link href="js/bootstrap5.min.js" rel="stylesheet" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet" />
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <!--script src="bootstrap.bundle.min.js"></script-->
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- 引入axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link rel="icon" type="image/png" href="img/logo_icon.png" />
+  <!-- <img class="logo"  src="img/logo_icon.png" alt="../"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+</head>
+
+<body style="background-color:transparent">
+  <div id="VueApp">
+    <!--上排按鈕-->
+    <!-- iframe使用會擋到內部元件，所以直接把語法貼過來用 
+      <iframe id="ifrme" class="iframeTop fixed-top" scrolling="no" src="menu.html" frameborder="0" 
+      allowfullscreen ></iframe>    
+    -->
+
+
+    <nav class="navbar  menu fixed-top" id="menu">
+      <a href="index.html" target="_parent">
+        <img class="logo" src="img/LOGO.png" />
+      </a>
+
+      <div @click="listBtn()" id="listBtn" class="hide-in-web">
+        <img src="img/ListBTN.svg" />
+      </div>
+
+      <div class="list-hide-in-web navbar-collapse " id="HidAndShow">
+        <ul class="navbar-nav text-center ml-auto">
+          <il>
+            <a href="page_buy.html" class="nav-linkDIV" target="_parent">購買頁</a>
+          </il>
+          <il>
+            <a href="page_order.html" class="nav-linkDIV" target="_parent">我的訂單</a>
+          </il>
+          <il>
+            <span class="line">│</span>
+            <a data-v-2c81422f="" href="" target="_blank" class="out-link">
+              <img src="img/person_icon.png" style="height :25px" alt="" />
+              <span style="color: white;">hi ruby</span>
+            </a>
+            <!-- <a data-v-2c81422f="" href="https://www.pixiv.net/users/2567810" target="_blank" class="out-link">
+              <img src="img/BTN-pixiv.svg" alt="" />
+            </a>
+            <a data-v-2c81422f="" href="https://twitter.com/IsFlyingDream" target="_blank" class="out-link">
+              <img src="img/BTN-twitter.svg" alt="" />
+            </a>
+            <a data-v-2c81422f="" href="https://www.instagram.com/isflyingdream/" target="_blank" class="out-link">
+              <img src="img/BTN-instagram.svg" alt="" />
+            </a> -->
+            <span class="line">│</span>
+          </il>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!--本頁內容-->
+    <div class="ServiceDIV  pt-5 pt-md-0">
+        
+        <div class=" text-center">
+            <h2><strong><u>您選擇的方案和定價</u></strong></h2>
+        </div>
+      <!-- <p><small>以下僅放部分程式方面的專案</small></p>      -->
+      <div class="row justify-content-center">
+        <div class="col-10 col-md-8 col m-4 shadow p-4 " >
+          <!--拿掉@click="imgplay(0)"-->
+          <p><strong>HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web IRS 30 - Person/Year</strong></p>
+          <div class="row p-2">
+              <div class="col-6 d-flex justify-content-start">              
+                  <p class="">小計</p>   
+              </div>               
+              <div class="col-6 d-flex justify-content-end">              
+                  <p>NTD 1,590</p>   
+              </div>
+          </div>
+          <hr>
+          <div class="row p-2">
+              <div class="col-6 d-flex justify-content-start">              
+                  <p><strong>應付金額</strong></p>   
+              </div> 
+              <div class="col-6 d-flex justify-content-end">              
+                  <h3 class="text-danger ">NTD 1,590</h3>   
+              </div>
+          </div>
+         
+          <div style="background-color: rgb(230, 230, 230)" class="p-3">
+            <div class="d-flex justify-content-end">
+                <p>訂閱人：李子 (用戶編號 1681089795)</p>
+            </div>  
+            <div class="d-flex justify-content-end ">
+                <input class="form-control  text-end w-75" type="text" placeholder="請輸入您的電子郵件，如name@example.com">
+              </div>            
+          </div>                 
+        </div>
+        <div class="col-10 col-md-8 col d-flex justify-content-end" >
+            <a class="btn btn-dark" href="page_checklist.html" role="button">繼續付款</a>
+        </div>   
+      </div>
+        
+    </div>
+  </div>
+  <footer class="fixed-bottom text-center">
+      Copyright © HABOOK Group. All rights reserved.  
+  </footer>
+  <script src="js/MyScript.js"></script>
+</body>

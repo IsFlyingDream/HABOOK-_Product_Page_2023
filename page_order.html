@@ -25,14 +25,17 @@
   <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 
   <!-- Vue -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="utf-8"></script>
-
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" type="text/javascript" charset="utf-8"></script> -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- 引入axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
   <!-- Custom styles for this template -->
   <link rel="icon" type="image/png" href="img/logo_icon.png" />
   <!-- <img class="logo"  src="img/logo_icon.png" alt="../"> -->
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
   
 </head>
 
@@ -45,7 +48,7 @@
     -->
 
 
-    <nav class="navbar  menu fixed-top" id="menu">
+    <nav class="navbar menu fixed-top" id="menu">
       <a href="index.html" target="_parent">
         <img class="logo" src="img/LOGO.png" />
       </a>
@@ -56,13 +59,13 @@
 
       <div class="list-hide-in-web navbar-collapse " id="HidAndShow">
         <ul class="navbar-nav text-center ml-auto">
-          <il>
-            <a href="buy.html" class="nav-linkDIV" target="_parent">購買頁</a>
-          </il>
-          <il>
-            <a href="myOrder.html" class="nav-linkDIV" target="_parent">我的訂單</a>
-          </il>
-          <il>
+          <li>
+            <a href="page_buy.html" class="nav-linkDIV" target="_parent">購買頁</a>
+          </li>
+          <li>
+            <a href="page_order.html" class="nav-linkDIV" target="_parent">我的訂單</a>
+          </li>
+          <li>
             <span class="line">│</span>
             <a data-v-2c81422f="" href="" target="_blank" class="out-link">
               <img src="img/person_icon.png" style="height :25px" alt="" />
@@ -78,7 +81,7 @@
               <img src="img/BTN-instagram.svg" alt="" />
             </a> -->
             <span class="line">│</span>
-          </il>
+          </li>
         </ul>
       </div>
     </nav>
@@ -98,9 +101,8 @@
               <hr class="flex-grow-1 border border-primary border-0 opacity-75">
             </div>
          
-          <!-- HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web IRS 30 - Person/Year -->  
-         
-         <div class="row p-2 px-5"> <!-- 第一筆訂單       -->
+         <!-- 第一筆訂單       -->
+         <!-- <div class="row p-2 px-5"> 
             <div style="background-color: rgb(230, 230, 230)" class="p-3 rounded-3">
                 <div class="float-end">
                     <div class="d-flex align-items-center">
@@ -127,36 +129,40 @@
                 </div>
                 <p class="text-secondary ">醍摩豆雲平台IES 5</p>        
             </div>
-         </div>
+         </div> -->
 
-         <div class="row p-2 px-5"> <!-- 第二筆訂單       -->
-          <div style="background-color: rgb(230, 230, 230)" class="p-3 rounded-3">
-              <div class="float-end">
-                  <div class="d-flex align-items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                      </svg>
-                      <p class="ms-2 mb-0">已付款</p>
-                    </div>
-              </div>  
-              <p class="fs-5">訂單編號 XXXXXXXXXXXXXXX</p>
-              <div class="text-secondary">
-                 <p class="m-0">付款時間2020/06/30 15:37:49</p>
-                 <p class="m-0">實付金額NT 4330</p>
-                 <p>付款方式 信用卡 繳費</p>
-              </div>
-              <hr>
-              <p class="my-1">購買項目</p>
-               
-              <div class="float-end text-secondary">
-                  <div class="d-flex align-items-center">
-                     
-                      <p class="ms-2 mb-0">序號oweiuopwef</p>
-                    </div>
-              </div>
-              <p class="text-secondary ">醍摩豆雲平台IES 5</p>        
-          </div>
-       </div>
+         <!-- Vue改寫訂單       -->
+        <div v-for="(order,index) in orders">
+          <div class="row p-2 px-5"> 
+            <div style="background-color: rgb(230, 230, 230)" class="p-3 rounded-3">
+                <div class="float-end">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <p class="ms-2 mb-0">已付款</p>
+                      </div>
+                </div>  
+                <p class="fs-5">訂單編號 {{order.number}}</p>
+                <div class="text-secondary">
+                   <p class="m-0">付款時間{{order.paytime}}</p>
+                   <p class="m-0">實付金額NT {{order.pay}}</p>
+                   <p>付款方式 {{order.way}} 繳費</p>
+                </div>
+                <hr>
+                <p class="my-1">購買項目</p>
+                 
+                <div class="float-end text-secondary">
+                    <div class="d-flex align-items-center">
+                       
+                        <p class="ms-2 mb-0">序號{{order.key}}</p>
+                      </div>
+                </div>
+                <p class="text-secondary ">{{order.item}}</p>        
+            </div>
+           </div>
+        </div>
+        
            
       </div>
         
@@ -164,6 +170,6 @@
   </div>
   <footer class="fixed-bottom text-center">
       Copyright © HABOOK Group. All rights reserved.  
-  </footer>
+  </footer>  
   <script src="js/MyScript.js"></script>
 </body>
