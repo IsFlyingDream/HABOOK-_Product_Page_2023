@@ -1,0 +1,6 @@
+npm create vue@latest
+>>>說明：latest最新版本的意思
+cd project2
+npm install
+npm run dev     
+>>>dev說明：dev每次專案需要重新執行一次，不會隨時監聽。
