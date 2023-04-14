@@ -4,8 +4,7 @@ createApp({
 		return {
 			orders: [
 				//{訂單編號number:'',付款時間paytime:'',付款金額pay:'',付款方式way:'',購買項目item:'',序號與型號key:''},		
-				{ number: 'abcccc', paytime: '2020/06/30 15:37:49', pay: 1000, way: '轉帳', item: '醍摩豆雲平台IES 5', key: 'abcabc' },
-				{ number: 'caaba', paytime: '2020/06/30 15:37:49', pay: 1000, way: '轉帳', item: '醍摩豆雲平台IES 5', key: 'abcabc' },
+				//{ number: '123456', paytime: '2024/02/31 00:00:00', pay: 1000, way: '轉帳', item: '醍摩豆雲平台IES 5', key: 'mykey' },
 			],
 		}
 	},
@@ -23,14 +22,12 @@ createApp({
 			}
 		},
 		fetchData() {
-			console.log("fetchData in");
-			//axios.get('https://cdn.jsdelivr.net/gh/IsFlyingDream/test_project/API_response/gcb.json')
-			axios.get('./jsonTest.json')
+			axios.get('https://raw.githubusercontent.com/IsFlyingDream/HABOOK-_Product_Page_2023/main/json_test/jsonTest.json')
 				.then(response => {
 					console.log("fetchData2 in");
-					//this.orders = response.data.orders;
+					this.orders = response.data.orders;
 					//this.agentPassStat_passed = response.data.results.agentPassStat.passed;
-					//console.log("orders="+this.orders);
+					console.log("orders="+this.orders);
 
 				})
 				.catch(error => {
@@ -69,24 +66,3 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
 //上方菜單顯示與隱藏的按鈕↑↑-----------------------------
 
 
-
-
-//為傳統js用法↓↓----------------------------------------------------------------------------------------------------
-//讓上方菜單frameid大小自動改變↓↓
-/*function doneLoading() {
-	var frame = document.getElementsByTagName('iframe')[0].contentWindow.document.body.innerHTML = "NOFIDDLE";
-
-	var iframe = document.getElementById("ifrm");
-
-	// Adjusting the iframe height onload event
-	iframe.onload = function () {
-		iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-
-	}
-
-}
-//讓上方菜單frameid大小自動改變↑↑
-
-//為傳統js用法↑↑----------------------------------------------------------------------------------------------------------------*/
-
-// 以下改成Vue用法----------------------------------------------------------------------------------------------------------------
