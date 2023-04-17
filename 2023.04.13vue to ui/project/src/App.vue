@@ -1,43 +1,35 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import PageHead from './components/PageHead.vue'
-import PageMyOrderList from './components/PageMyOrderList.vue'
-import PageFooter from './components/PageFooter.vue'
+import Head from './components/Head.vue'
+import order_part from './components/order_part.vue'
+import PageOrder from './components/PageOrder.vue'
+import Footer from './components/Footer.vue'
+import axios from 'axios'
+
 </script>
 
 <template>
   <header>
     <!-- <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" /> -->
-    <PageHead class="page-head" />
+
+    <Head class="page-head" />
     <div class="wrapper">
       <!-- <HelloWorld msg="You did it!" /> -->
     </div>
   </header>
+  
   <main>
-    <!-- <TheWelcome /> -->
-    <Row justify="center">
-      <Col span="23">
-      <Content :style="{ padding: '0 100px' }">
-        <div class="page-title">我的訂單紀錄</div>
-        <Card style="margin: 0px 0px 50px; padding:10px;">
-          <div class="title-word">
-            <span class="card-title">已付款訂單</span>
-            <hr style="flex: 1; border-color: #2d8cf0;" />
-          </div>
-          <div style="margin-top: 10px;">
-            <PageMyOrderList />
-            <PageMyOrderList />
-            <PageMyOrderList />
-            <PageMyOrderList />
-          </div>
-        </Card>
-      </Content>
-      </Col>
-    </Row>
+    <!-- <TheWelcome /> --> 
+    <!-- <PageOrder /> -->
+    <router-view />
   </main>
-  <PageFooter />
+  <Footer />
 </template>
+
+<script>
+
+</script>
 
 <style scoped>
 .card-title {

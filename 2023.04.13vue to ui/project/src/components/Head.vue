@@ -1,15 +1,18 @@
-<template> 
+<script setup>
+
+</script>
+<template>
   <div class="header">
     <div class="logo">
       <img src="/LOGO.png" alt="Logo" height="150" />
     </div>
     <Menu mode="horizontal" theme="dark" active-name="1">
-      <MenuItem name="1" class="menu-item">
-      <!-- <Icon type="ios-paper" /> -->
-      購買頁
+
+      <MenuItem name="1">
+        <router-link to="/PageBuy" class="menu-item">購買頁</router-link>
       </MenuItem>
       <MenuItem name="2" class="menu-item">
-      我的訂單
+        <router-link to="/PageOrder" class="menu-item">我的訂單</router-link>
       </MenuItem>
       <Submenu name="3" class="menu-item">
         <template #title>
@@ -31,27 +34,31 @@
 .ivu-menu-dark {
   background-color: #000000;
 }
-.menu-item{/* 選單文字大小*/
+
+.menu-item {
+  /* 選單文字大小*/
   font-size: 18px;
+  color: white;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* Set header height */
+  height: 60px;
+  /* Set header height */
   background-color: #001529;
   color: #fff;
   padding: 0 20px;
 
   text-align: center;
   position: fixed;
-  top: 0;  
+  top: 0;
   width: 100%;
 }
 
 .logo {
-  height: 50px; /* Set logo height to match header */
+  height: 50px;
+  /* Set logo height to match header */
 }
-
 </style>
