@@ -4,7 +4,7 @@ createApp({
 		return {
 			orders: [
 				//{訂單編號number:'',付款時間paytime:'',付款金額pay:'',付款方式way:'',購買項目item:'',序號與型號key:''},		
-				//{ number: '123456', paytime: '2024/02/31 00:00:00', pay: 1000, way: '轉帳', item: '醍摩豆雲平台IES 5', key: 'mykey' },
+				//{ number: '123456', paytime: '2024/02/31 00:00:00', pay: 1000, way: '轉帳', item: '醍摩豆雲平台IES 5', mykey: 'mykey123' },
 			],
 		}
 	},
@@ -22,7 +22,7 @@ createApp({
 			}
 		},
 		fetchData() {
-			axios.get('https://raw.githubusercontent.com/IsFlyingDream/HABOOK-_Product_Page_2023/main/json_test/jsonTest.json')
+			axios.get('https://raw.githubusercontent.com/IsFlyingDream/HABOOK-_Product_Page_2023/main/2023.04.12%E4%BD%9C%E5%BB%A2%EF%BC%8C%E4%BD%BF%E7%94%A8bootstrap5_vue/json_test/jsonTest.json')
 				.then(response => {
 					console.log("fetchData2 in");
 					this.orders = response.data.orders;
