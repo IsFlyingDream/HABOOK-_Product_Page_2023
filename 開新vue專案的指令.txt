@@ -1,6 +1,30 @@
+《Vite包裝》
 npm create vue@latest
 >>>說明：latest最新版本的意思
-cd project2
+cd project
 npm install
 npm run dev     
 >>>dev說明：dev每次專案需要重新執行一次，不會隨時監聽。
+
+------------------------------------
+《Webpage打包》↓缺點，Vue不是最新版，是2.5.2版的。
+// 全局安装 vue-cli(同台電腦，只需要裝一次)
+$ npm install -g vue-cli
+// 创建一个基于 "webpack" 模板的新项目↓↓主要是這行指令
+$ vue init webpack my-project
+// 安装依赖，走你
+$ cd my-project
+$ npm install
+$ npm run dev
+
+---------------
+
+//卸载 @vue/cli-service
+npm uninstall @vue/cli-service
+//安装 vue-cli-plugin-webpack 插件
+vue add webpack
+//更新package.json 文件中的依赖项
+npm install vue@latest --save
+
+--------------------
+vue create my-project
