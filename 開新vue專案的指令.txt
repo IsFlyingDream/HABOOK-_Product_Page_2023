@@ -1,3 +1,5 @@
+有空寫到https://medium.com/@ruby29922026 做筆記
+
 《Vite包裝》
 npm create vue@latest
 >>>說明：latest最新版本的意思
@@ -5,6 +7,7 @@ cd project
 npm install
 npm run dev     
 >>>dev說明：dev每次專案需要重新執行一次，不會隨時監聽。
+
 
 ------------------------------------
 《Webpage打包》↓缺點，Vue不是最新版，是2.5.2版的。
