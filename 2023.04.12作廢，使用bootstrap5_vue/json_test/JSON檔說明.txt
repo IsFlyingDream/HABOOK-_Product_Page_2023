@@ -1,6 +1,7 @@
 JSON檔說明
 訂單編號　order.number
 付款時間 order.paytime
+發票號碼 order.InvoiceNumber
 付款金額 order.pay
 付款方式 order.way
 購買項目 order.item
