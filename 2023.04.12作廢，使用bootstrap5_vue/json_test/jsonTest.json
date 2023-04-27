@@ -3,6 +3,7 @@
                 {
                         "number": "MyNumber1",
                         "paytime": "2020/06/30 15:37:49",
+                        "InvoiceNumber": 66882140,
                         "pay": 1000,
                         "way": "轉帳",
                         "item": "醍摩豆雲平台IES 5",
@@ -11,6 +12,7 @@
                 {
                         "number": "MyNumber2",
                         "paytime": "2020/06/30 15:37:49",
+                        "InvoiceNumber": 25722152,
                         "pay": 1000,
                         "way": "轉帳",
                         "item": "醍摩豆雲平台IES 5",
@@ -19,6 +21,7 @@
 				{
                         "number": "MyNumber3",
                         "paytime": "2020/06/30 15:37:49",
+                        "InvoiceNumber": 93412693,
                         "pay": 1000,
                         "way": "轉帳",
                         "item": "醍摩豆雲平台IES 5",
