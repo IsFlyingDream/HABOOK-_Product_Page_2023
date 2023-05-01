@@ -5,7 +5,7 @@
         <div style="margin-right: 10px; flex: 1;  align-items: center;">
           <p style="font-size: 20px;">訂單編號 {{ number }}</p>
         </div>
-        <div style=" display: flex; ">
+        <div style=" display: flex; align-items: center;">
           <Icon type="ios-checkmark-circle" />
           <p>已付款</p>
         </div>
