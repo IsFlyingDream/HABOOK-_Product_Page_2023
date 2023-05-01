@@ -48,7 +48,7 @@
           <MenuGroup title="用戶">
             <MenuItem name="3-1">帳戶資料</MenuItem>
             <MenuItem name="3-2">
-            <RouterLink to="/PageOrder">我的訂單</RouterLink>
+            <RouterLink to="/PageOrder" :class="{ 'active-link': $route.path === '/PageOrder' }">我的訂單</RouterLink>
             </MenuItem>
             <MenuItem name="3-3">登出</MenuItem>
           </MenuGroup>
@@ -170,8 +170,11 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
 }
 
 #listBtn {
-  z-index: 999;  
+  z-index: 999;
 }
+.active-link {
+    color: #515a6e;
+  }
 
 @media screen and (max-width: 576px) {
   .logo-img {
@@ -185,8 +188,11 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
   .ivu-menu {
     display: none;
   }
+  
+  .active-link {
+    color: #e8eaec;
+  }
 
- 
 }
 
 .ivu-menu-dark {
@@ -221,4 +227,5 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
   width: 420px;
   margin: 0 auto;
   margin-right: 20px;
-}</style>
+}
+</style>
