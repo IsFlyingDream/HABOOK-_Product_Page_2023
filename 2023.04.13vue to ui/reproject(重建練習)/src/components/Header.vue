@@ -108,7 +108,7 @@ export default {
       console.log("mode=" + this.mode);
     },
     listBtn() {//上方菜單顯示與隱藏的按鈕↓↓
-      var listBtn = document.getElementById('listBtn');
+      //var listBtn = document.getElementById('listBtn');
       var textlistn = document.getElementById('HidAndShow');
       if (textlistn.style.display == "block") {
         textlistn.style.display = "none";
@@ -169,6 +169,10 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
   height: 140px;
 }
 
+#listBtn {
+  z-index: 999;  
+}
+
 @media screen and (max-width: 576px) {
   .logo-img {
     height: 100px;
@@ -177,6 +181,12 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
   #HidAndShow {
     margin-right: 30px;
   }
+
+  .ivu-menu {
+    display: none;
+  }
+
+ 
 }
 
 .ivu-menu-dark {
@@ -189,9 +199,6 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
   color: white;
 }
 
-#listBtn {
-  z-index: 999;
-}
 
 .header {
   display: flex;
@@ -214,5 +221,4 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
   width: 420px;
   margin: 0 auto;
   margin-right: 20px;
-}
-</style>
+}</style>
