@@ -1,0 +1,21 @@
+『project』內有購買頁以及訂單一覽。有使用到axios以及vue的換頁方式：
+ <router-link to="/PageBuy" class="menu-item">購買頁</router-link>
+ 以及
+<router-view />
+===================================
+『Router_網頁換頁範例(vue的方式)』
+如標題。
+===================================
+
+『reproject(重建練習)』內有購買頁以及訂單一覽，比『project』多了購買頁面按鈕點下去以後會跳轉訂單成功頁面，並且購買點enter後可以進行表單送出動作。
+※還多了<header>的部分能自適應改變選單顯示方式(垂直水平以及按鈕是否出現)
+
+換頁則是使用iview的換頁方式： 
+<RouterLink to="/PageOrder" class="menu-item">我的訂單</RouterLink>
+以及
+ <RouterView />
+ 
+
+ 
+ ===================================
+『x-1』是vite+vue+typescript嘗試寫的專案，卡在template+template內部資料抓不到。
