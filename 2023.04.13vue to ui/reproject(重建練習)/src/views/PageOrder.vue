@@ -5,22 +5,26 @@ import axios from 'axios'
 
 <template>
   <Row justify="center">
-      <Col span="23">
-      <Content :style="{ padding: '0 100px' }">
-        <div class="page-title">我的訂單紀錄</div>
-        <Card style="margin: 0px 0px 50px; padding:10px;">
-          <div class="title-word">
-            <span class="card-title">已付款訂單</span>
-            <hr style="flex: 1; border-color: #2d8cf0;" />
-          </div>
+    <Col :xs="23" :sm="22" :md="19">
+    <Content>
+      <div class="page-title"><b>我的訂單紀錄</b></div>
+      <Card style="margin-bottom:50px;padding:10px;">
+        <div class="title-word">
+          <span class="card-title">已付款訂單</span>
+          <hr style="flex: 1; border-color: #2d8cf0;" />
+        </div>
+        <Row justify="center" align="middle">
+          <Col :xs="24" :sm="22">
           <div style="margin-top: 10px;" v-for="order in orders">
-            <order_part :number='order.number' :paytime="order.paytime" :InvoiceNumber="order.InvoiceNumber" :pay="order.pay" :way="order.way"
-              :item="order.item" :mykey="order.mykey" />
+            <order_part :number='order.number' :paytime="order.paytime" :InvoiceNumber="order.InvoiceNumber"
+              :pay="order.pay" :way="order.way" :item="order.item" :mykey="order.mykey" />
           </div>
-        </Card>
-      </Content>
-      </Col>
-    </Row>
+          </Col>
+        </Row>
+      </Card>
+    </Content>
+    </Col>
+  </Row>
 </template>
 <script>
 export default {
@@ -51,7 +55,7 @@ export default {
     this.fetchData();
   },
 }
-  </script>
+</script>
 
 <style>
 .card-title {
@@ -61,6 +65,7 @@ export default {
   color: #2d8cf0;
   font-size: 20px;
 }
+
 .ivu-card {
   /* 讓card保持有陰影*/
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -73,5 +78,4 @@ export default {
   text-decoration: underline;
   color: black;
 }
-
 </style>

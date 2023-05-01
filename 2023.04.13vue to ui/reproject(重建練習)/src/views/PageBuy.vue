@@ -1,8 +1,8 @@
 <template>
    <Row justify="center">
-      <Col span="22">
-      <Content :style="{ padding: '0 100px' }">
-        <div class="page-title">您選擇的方案和定價</div>
+      <Col :xs="24" :md="22" :xl="19">
+      <Content :style="{ padding: '0 30px' }">
+        <div class="page-title"><b>您選擇的方案和定價</b></div>
         <Card style="margin: 0px 0px 50px; padding:10px;">
           <p style="font-size: 20px; font-weight:bold;">HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web
             IRS 30 -
@@ -88,7 +88,9 @@ export default {
 
 <style>
 
-
+.ivu-form-item{
+  margin-bottom:10px;
+}
 .ivu-card {
   /* 讓card保持有陰影*/
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);

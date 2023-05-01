@@ -1,7 +1,7 @@
 <template>
   <Row justify="center">
-    <Col span="22">
-    <Content :style="{ padding: '0 100px' }">
+    <Col :xs="24" :md="19">
+    <Content :style="{ padding: '0 30px' }">
       <div class="page-title">您的訂單明細</div>
       <Card style="margin: 0px 0px 50px; padding:10px 10px 0px 10px; ">
         <p style="font-size: 20px; font-weight:bold; padding-right:10px;">HiTeach Mobile 3 Teacher Personal
@@ -13,7 +13,7 @@
             <div style="margin-right: 10px;  ">
               <p>付款時間</p>
             </div>
-            <div >
+            <div>
               <p>2020/06/30 15:37:49</p>
             </div>
           </div>
@@ -21,7 +21,7 @@
             <div style="margin-right: 10px;  ">
               <p>訂單編號</p>
             </div>
-            <div >
+            <div>
               <p>20230427559139</p>
             </div>
           </div>
