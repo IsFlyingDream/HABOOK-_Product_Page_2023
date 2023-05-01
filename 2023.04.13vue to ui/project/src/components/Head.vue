@@ -7,7 +7,6 @@
       <img src="/LOGO.png" alt="Logo" height="150" />
     </div>
     <Menu mode="horizontal" theme="dark" active-name="1">
-
       <MenuItem name="1">
         <router-link to="/PageBuy" class="menu-item">購買頁</router-link>
       </MenuItem>

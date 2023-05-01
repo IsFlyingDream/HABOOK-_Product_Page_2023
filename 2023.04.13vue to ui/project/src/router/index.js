@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import PageOrder from '@/views/PageOrder.vue';
-import PageBuy from '@/views/PageBuy.vue';
+import PageOrder from '@/components/PageOrder.vue';
+import PageBuy from '@/components/PageBuy.vue';
 
 const router = createRouter({
   history: createWebHistory(),

@@ -1,7 +1,7 @@
 <script setup>
 // import HelloWorld from './components/HelloWorld.vue'
 // import TheWelcome from './components/TheWelcome.vue'
-import order_part from '../components/order_part.vue'
+import order_part from './order_part.vue'
 import axios from 'axios'
 
 </script>

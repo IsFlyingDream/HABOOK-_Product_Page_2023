@@ -3,7 +3,7 @@
 // import TheWelcome from './components/TheWelcome.vue'
 import Head from './components/Head.vue'
 import order_part from './components/order_part.vue'
-import PageOrder from './views/PageOrder.vue'
+import PageOrder from './components/PageOrder.vue'
 import Footer from './components/Footer.vue'
 import axios from 'axios'
 
