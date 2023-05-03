@@ -57,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .card-title {
   margin-right: 16px;
   display: inline-block;
