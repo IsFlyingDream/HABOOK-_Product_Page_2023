@@ -3,30 +3,30 @@
       <Col :xs="24" :md="22" :xl="19">
       <Content :style="{ padding: '0 30px' }">
         <div class="page-title"><b>您選擇的方案和定價</b></div>
-        <Card style="margin: 0px 0px 50px; padding:10px;">
-          <p style="font-size: 20px; font-weight:bold;">HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web
+        <Card style=" padding:10px;">
+          <p class="In-title">HiTeach Mobile 3 Teacher Personal Subscription Edition (Home) Web
             IRS 30 -
             Person/Year</p>
-          <div style="display: flex; align-items: center; margin:20px auto 30px;">
-            <div style="margin-right: 10px; flex: 1;  align-items: center;">
-              <p style="font-size: 18px;">小計</p>
+          <div class="infoBox">
+            <div class="infoBox-left">
+              <p>小計</p>
             </div>
-            <div style="font-size: 18px; display: flex; text-align: right;">
+            <div>
               <p>NTD 1,590</p>
             </div>
           </div>
-          <hr style="background-color:#c5c8ce; border: none; height: 1px;">
-          <div style="display: flex; align-items: center; margin:20px auto 30px;">
-            <div style="margin-right: 10px; flex: 1;  align-items: center;">
-              <p style="font-weight:bold; font-size: 17px;">應付金額</p>
+          <hr>
+          <div class="infoBox">
+            <div class="infoBox-left">
+              <p style="font-weight:bold; ">應付金額</p>
             </div>
-            <div style="font-size: 30px; display: flex; text-align: right; color:#ed4014">
+            <div style="font-size: 30px; color:#ed4014">
               <p>NTD 1,590</p>
           </div>
         </div>
         <div class="ivu-text-right">
-          <div style="background-color: rgb(230, 230, 230); padding:10px 10px 3px 0px">
-              <div style="margin: 0px auto 10px;">
+          <div class="gayBox">
+              <div style="margin-bottom: 10px;">
                 <p>訂閱人：李子 (用戶編號 1681089795)</p>
               </div>
               <Form ref="formValidate" @submit.native.prevent :model="formValidate" :rules="ruleValidate" :label-width="80"  >
@@ -86,7 +86,31 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+hr{
+  background-color:#c5c8ce; 
+  border: none; 
+  height: 1px;
+}
+.In-title{
+  font-size: 20px; 
+  font-weight:bold;
+}
+.infoBox{
+  display: flex; 
+  margin:20px auto 30px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.infoBox-left{
+  margin-right: 10px; 
+  flex: 1;
+}
+.gayBox{
+  background-color: rgb(230, 230, 230); 
+  padding:10px 10px 3px 0px
+}
 
 .ivu-form-item{
   margin-bottom:10px;
