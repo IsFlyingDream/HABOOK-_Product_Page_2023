@@ -1,11 +1,10 @@
 <template>
   <Card :bordered="false" style="background:#eee; padding:5px;">
-
-    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-      <div style="margin-right: 10px; flex: 1;  align-items: center;">
+    <div style=" margin-bottom: 10px;" class="OneLine">
+      <div style=" flex: 1;">
         <p style="font-size: 20px;">訂單編號 {{ number }}</p>
       </div>
-      <div style=" display: flex; align-items: center;">
+      <div class="OneLine">
       <!-- <Space align="baseline"> -->
         <Icon type="ios-checkmark-circle" />
         <p>已付款</p>
@@ -20,11 +19,11 @@
       <hr style="margin: 10px 0px;">
       <p style="color: black; ">購買項目</p>
 
-      <div style="display: flex; align-items: center;">
-        <div style="margin-right: 10px; flex: 1; ">
+      <div class="OneLine">
+        <div style=" flex: 1; ">
           <p>{{ item }}</p>
         </div>
-        <div style=" display: flex; ">
+        <div >
           <p>序號 {{ mykey }}</p>
         </div>
       </div>
@@ -48,6 +47,10 @@ export default {
 </script>
 
 <style scoped>
+.OneLine{
+  display: flex; 
+  align-items: center;
+}
 .card-p-15 {
   line-height: 1.5;
 }

@@ -26,8 +26,7 @@
       </Submenu>
     </Menu>
     -->
-    <div @click="listBtn()" id="listBtn"
-      style="position: fixed; right:10px; top:15px; display: flex; align-items: center;">
+    <div @click="listBtn()" id="listBtn">
       <!-- <Icon type="md-funnel" size="25" color="grey"/> -->
       <Icon type="ios-arrow-down" size="25" color="grey" />
     </div>
@@ -176,6 +175,9 @@ window.onresize = function () {  //每次視窗改變都會載入下列事件
 }
 
 #listBtn {
+  position: fixed; 
+  right:10px; 
+  top:15px; 
   z-index: 999;
 }
 

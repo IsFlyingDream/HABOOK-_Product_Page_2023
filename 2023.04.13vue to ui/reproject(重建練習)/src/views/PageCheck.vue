@@ -4,7 +4,8 @@
     <Content :style="{ padding: '0 30px' }">
       <div class="page-title">您的訂單明細</div>
       <Card  class="CardStyle">
-        <p style="font-size: 20px; font-weight:bold; ">HiTeach Mobile 3 Teacher Personal
+        <p style="font-size: 20px; font-weight:bold; ">
+          HiTeach Mobile 3 Teacher Personal
           Subscription Edition (Home) Web
           IRS 30 -
           Person/Year</p>
@@ -29,7 +30,7 @@
             <div class="textStyle-right"><!--flex: 1; 加入這屬性會變成左右兩邊-->
               <p>訂單狀態</p>
             </div>
-            <div style="align-items: center;  display: flex; ">
+            <div style="align-items:center;  display:flex; ">
               <Icon type="ios-checkmark-circle" />
               <p>付款完成</p>
             </div>
