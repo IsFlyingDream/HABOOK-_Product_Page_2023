@@ -15,7 +15,9 @@
 以及
  <RouterView />
  
-
+=========================
+reproject(重建練習)_pug
+將『reproject(重建練習)』的HTML改為Pug寫，做練習。
  
  ===================================
 『x-1』是vite+vue+typescript嘗試寫的專案，卡在template+template內部資料抓不到。
